@@ -28,7 +28,7 @@ To get a local copy up and running follow these simple steps:
 
 👤 **JuharSeid**
 
-- GitHub: [@ArthurGC](https://github.com/juaryimami)
+- GitHub: [@JuharYimer](https://github.com/juaryimami)
 
 ## 🤝 :raised_hand: :raised_hand: Contributions
 
