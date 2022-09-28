@@ -11,8 +11,6 @@ import {
   clearCompletedTasks, removeAllIcon, removeAllItems, removeCompletedItem, removeSelectedItem,
 } from './modules/remove.js';
 
-// const listContainer = document.querySelector('.container-list');
-
 let toDoTasks = [
   {
     description: 'Wash the dishes',
