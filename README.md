@@ -36,7 +36,8 @@ To get a local copy up and running follow these simple steps:
       `npm run build`
    - After you built youdr project run the following command to see your project in browser.
       `npm start`
-   - For tracking the linter errors in HTML file run:
+  - For tracking the linter errors in js file run:
+
          npx eslint .
 
    - For tracking the linter errors in CSS file run:
