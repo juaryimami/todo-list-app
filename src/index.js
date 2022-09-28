@@ -120,6 +120,7 @@ listContainer.addEventListener('click', (e) => {
     refreshEditableItems(toDoTasks);
   }
 });
+// refreshing iterms here not not i did not clear the tasks
 
 removeAllIcon.addEventListener('click', () => {
   toDoTasks = removeAllItems(toDoTasks, listContainer);
