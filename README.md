@@ -33,9 +33,13 @@ To get a local copy up and running follow these simple steps:
          npm install This command will download all the dependencies of the project
 
    - After installing all the packages you need to build the project.
+        
          npm run build
+         
    - After you built youdr project run the following command to see your project in browser.
+        
          npm start
+
   - For tracking the linter errors in js file run:
 
          npx eslint .
