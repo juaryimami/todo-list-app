@@ -8,7 +8,7 @@ import {
 } from './modules/dragDrop.js';
 import { listContainer, createItemTask } from './modules/renderTasks.js';
 import {
-  clearCompletedTasks, removeAllIcon, removeAllItems, removeCompletedItem, removeSelectedItem,
+  clearCompletedTasks, removeAllIcon, removeCompletedItem, removeSelectedItem,
 } from './modules/remove.js';
 
 let toDoTasks = [
@@ -123,7 +123,8 @@ listContainer.addEventListener('click', (e) => {
 // refreshing iterms here not not i did not clear the tasks
 
 removeAllIcon.addEventListener('click', () => {
-  toDoTasks = removeAllItems(toDoTasks, listContainer);
+  // toDoTasks = removeAllItems(toDoTasks, listContainer);
+  window.location.reload();
   setData();
 });
 
