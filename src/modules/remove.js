@@ -2,8 +2,9 @@ export const removeAllItems = (tasks, container) => {
   container.innerHTML = '';
   return [];
 };
+// method for the implemented for the button clear all completed task
 
-export const removeAllIcon = document.querySelector('.refresf-icon');
+export const removeAllIcon = document.querySelector('.refresh-icon');
 
 export const clearCompletedTasks = document.querySelector('.btn-clear');
 
