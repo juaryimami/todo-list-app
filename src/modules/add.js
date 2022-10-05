@@ -3,7 +3,7 @@ import { getElementValue, getElement } from './tools.js';
 import { renderTaskDom } from './render.js';
 import { refreshDragDropTarget } from './drag-drop.js';
 import { refreshDescriptions } from './description.js';
-import { Task } from './classes.js';
+import Task from './classes.js';
 
 // eslint-disable-next-line import/prefer-default-export
 export const addTask = (event) => {
@@ -22,5 +22,4 @@ export const addTask = (event) => {
   }
   return false;
 };
-
 module.exports = addTask;

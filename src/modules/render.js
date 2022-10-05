@@ -1,8 +1,7 @@
-import { listTasks } from './initial.js';
+import listTasks from './initial.js';
 import { getDataLocalStorage, setDataLocalStorage } from './store.js';
 import { createElement, getElement } from './tools.js';
 
-// eslint-disable-next-line import/prefer-default-export
 const listContainer = getElement('.container-list');
 const fragment = document.createDocumentFragment();
 

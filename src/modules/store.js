@@ -1,5 +1,4 @@
-import { listTasks } from './initial.js';
-// eslint-disable-next-line import/prefer-default-export
+import listTasks from './initial.js';
 
 export const getDataLocalStorage = () => JSON.parse(localStorage.getItem('TaskData')) || listTasks;
 

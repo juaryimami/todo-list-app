@@ -3,7 +3,6 @@ import { refreshIndex, renderTaskDom } from './render.js';
 import { refreshDragDropTarget } from './drag-drop.js';
 import { refreshDescriptions } from './description.js';
 
-// eslint-disable-next-line import/prefer-default-export
 const bundleRefreshHandlersAndUpdate = (listOfTask) => {
   refreshIndex(listOfTask);
   setDataLocalStorage(listOfTask);

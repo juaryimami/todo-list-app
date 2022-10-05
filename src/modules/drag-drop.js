@@ -1,6 +1,6 @@
 import { setDataLocalStorage } from './store.js';
 import { getChildren, getElement, getElements } from './tools.js';
-import { Task } from './classes.js';
+import Task from './classes.js';
 
 const listContainer = getElement('.container-list');
 

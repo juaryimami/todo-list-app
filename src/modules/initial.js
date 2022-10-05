@@ -16,5 +16,4 @@ const listTasks = [
   },
 ];
 
-// eslint-disable-next-line import/prefer-default-export
-export { listTasks };
+export default listTasks;
