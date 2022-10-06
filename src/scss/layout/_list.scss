@@ -56,6 +56,9 @@
     }
 
     ul {
+      overflow: scroll;
+      height: 200px;
+
       li {
         @include muli-text(15px, 500, 24px);
         @include flex(row, center, space-between);

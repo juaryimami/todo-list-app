@@ -4,6 +4,10 @@
 
 In this project, I set up my To-Do List web page. My goal was add the functionality to add and display each todo task inside my task list. 
 
+## Live Demo
+You can view my hosted website in the link shown below.
+GitHub: [@JUPAC](https://juaryimami.github.io/todo-list-app/dist/)
+
 ## :hammer: Built With
 
 - HTML, CSS, JS and Webpack.
