@@ -2,7 +2,7 @@ import './styles.scss';
 import { getElement } from './modules/tools.js';
 import { addTask } from './modules/add.js';
 import { renderTaskDom } from './modules/render.js';
-import { removeAllTask, removeTask, removeTaskChecked } from './modules/remove.js';
+import { removeTask, removeTaskChecked } from './modules/remove.js';
 import { refreshDragDropTarget } from './modules/drag-drop.js';
 import { refreshStatus } from './modules/checkbox.js';
 import { refreshDescriptions } from './modules/description.js';
@@ -35,4 +35,6 @@ listContainer.addEventListener('click', (event) => {
 removeCompletedTasks.addEventListener('click', removeTaskChecked);
 
 // Remove all tasks
-removeAllIcon.addEventListener('click', removeAllTask);
+removeAllIcon.addEventListener('click', () => {
+  window.location.reload();
+});
