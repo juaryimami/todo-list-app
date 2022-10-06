@@ -54,6 +54,10 @@ To get a local copy up and running follow these simple steps:
 
          npx stylelint "*/.{css,scss}"
 
+   -To run tests run the terminal below:
+
+         npm test
+
 ## :blue_book: Learning Objectives
 
 - Use webpack to bundle JavaScript.
