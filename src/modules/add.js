@@ -22,4 +22,4 @@ export const addTask = (event) => {
   }
   return false;
 };
-module.exports = addTask;
+// module.exports = addTask;

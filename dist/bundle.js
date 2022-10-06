@@ -114,9 +114,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /*!****************************!*\
   !*** ./src/modules/add.js ***!
   \****************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"addTask\": () => (/* binding */ addTask)\n/* harmony export */ });\n/* harmony import */ var _store_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./store.js */ \"./src/modules/store.js\");\n/* harmony import */ var _tools_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tools.js */ \"./src/modules/tools.js\");\n/* harmony import */ var _render_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./render.js */ \"./src/modules/render.js\");\n/* harmony import */ var _drag_drop_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./drag-drop.js */ \"./src/modules/drag-drop.js\");\n/* harmony import */ var _description_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./description.js */ \"./src/modules/description.js\");\n/* harmony import */ var _classes_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./classes.js */ \"./src/modules/classes.js\");\n/* module decorator */ module = __webpack_require__.hmd(module);\n\n\n\n\n\n\n\n// eslint-disable-next-line import/prefer-default-export\nconst addTask = (event) => {\n  if (event.keyCode === 13) {\n    const listTasks = (0,_store_js__WEBPACK_IMPORTED_MODULE_0__.getDataLocalStorage)();\n    const input = (0,_tools_js__WEBPACK_IMPORTED_MODULE_1__.getElement)('.input-task');\n    const inputValue = (0,_tools_js__WEBPACK_IMPORTED_MODULE_1__.getElementValue)('.input-task');\n    const newTask = new _classes_js__WEBPACK_IMPORTED_MODULE_5__[\"default\"](inputValue, false, listTasks.length);\n    listTasks.push(newTask);\n    (0,_store_js__WEBPACK_IMPORTED_MODULE_0__.setDataLocalStorage)(listTasks);\n    input.value = '';\n    (0,_render_js__WEBPACK_IMPORTED_MODULE_2__.renderTaskDom)();\n    (0,_drag_drop_js__WEBPACK_IMPORTED_MODULE_3__.refreshDragDropTarget)();\n    (0,_description_js__WEBPACK_IMPORTED_MODULE_4__.refreshDescriptions)();\n    return listTasks;\n  }\n  return false;\n};\n\nmodule.exports = addTask;\n\n\n//# sourceURL=webpack://todo-list-app/./src/modules/add.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"addTask\": () => (/* binding */ addTask)\n/* harmony export */ });\n/* harmony import */ var _store_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./store.js */ \"./src/modules/store.js\");\n/* harmony import */ var _tools_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tools.js */ \"./src/modules/tools.js\");\n/* harmony import */ var _render_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./render.js */ \"./src/modules/render.js\");\n/* harmony import */ var _drag_drop_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./drag-drop.js */ \"./src/modules/drag-drop.js\");\n/* harmony import */ var _description_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./description.js */ \"./src/modules/description.js\");\n/* harmony import */ var _classes_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./classes.js */ \"./src/modules/classes.js\");\n\n\n\n\n\n\n\n// eslint-disable-next-line import/prefer-default-export\nconst addTask = (event) => {\n  if (event.keyCode === 13) {\n    const listTasks = (0,_store_js__WEBPACK_IMPORTED_MODULE_0__.getDataLocalStorage)();\n    const input = (0,_tools_js__WEBPACK_IMPORTED_MODULE_1__.getElement)('.input-task');\n    const inputValue = (0,_tools_js__WEBPACK_IMPORTED_MODULE_1__.getElementValue)('.input-task');\n    const newTask = new _classes_js__WEBPACK_IMPORTED_MODULE_5__[\"default\"](inputValue, false, listTasks.length);\n    listTasks.push(newTask);\n    (0,_store_js__WEBPACK_IMPORTED_MODULE_0__.setDataLocalStorage)(listTasks);\n    input.value = '';\n    (0,_render_js__WEBPACK_IMPORTED_MODULE_2__.renderTaskDom)();\n    (0,_drag_drop_js__WEBPACK_IMPORTED_MODULE_3__.refreshDragDropTarget)();\n    (0,_description_js__WEBPACK_IMPORTED_MODULE_4__.refreshDescriptions)();\n    return listTasks;\n  }\n  return false;\n};\n// module.exports = addTask;\n\n\n//# sourceURL=webpack://todo-list-app/./src/modules/add.js?");
 
 /***/ }),
 
@@ -225,15 +225,12 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
 /******/ 			id: moduleId,
-/******/ 			loaded: false,
+/******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Flag the module as loaded
-/******/ 		module.loaded = true;
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -261,21 +258,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/harmony module decorator */
-/******/ 	(() => {
-/******/ 		__webpack_require__.hmd = (module) => {
-/******/ 			module = Object.create(module);
-/******/ 			if (!module.children) module.children = [];
-/******/ 			Object.defineProperty(module, 'exports', {
-/******/ 				enumerable: true,
-/******/ 				set: () => {
-/******/ 					throw new Error('ES Modules may not assign module.exports or exports.*, Use ESM export syntax, instead: ' + module.id);
-/******/ 				}
-/******/ 			});
-/******/ 			return module;
 /******/ 		};
 /******/ 	})();
 /******/ 	
