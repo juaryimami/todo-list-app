@@ -44,8 +44,8 @@
     .input-task {
       width: 100%;
       height: calc(2.5rem + 0.4vw);
-      border: none;
       outline: none;
+      border: none;
 
       @include muli-text(15px, 500, 24px);
 
