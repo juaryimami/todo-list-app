@@ -11,6 +11,11 @@ export const addTask = (event) => {
     const listTasks = getDataLocalStorage();
     const input = getElement('.input-task');
     const inputValue = getElementValue('.input-task');
+    if (!inputValue) {
+      event.preventDefault();
+      input.style.border = '3px solid red';
+      return false;
+    }
     const newTask = new Task(inputValue, false, listTasks.length);
     listTasks.push(newTask);
     setDataLocalStorage(listTasks);
